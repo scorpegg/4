@@ -1,0 +1,20 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int n, i;
+    cout << "Введите кол-во элементов массива: ";
+    cin >> n;
+    int chisla[n];
+    cout << "Введите элементы массива: ";
+    for (i=0; i<n; ++i)
+        cin >> chisla[i];
+    i=0;
+    while (i<n) {
+        if (chisla[i] % 2 != 0) { // Остаток от числа не равен "0" - (Есть остаток от числа, число нечетное)
+            cout << chisla[i] << " ";
+        }
+        i++;
+    }
+    return 0;
+}
